@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacto - Tienda de Cómics</title>
+    <link rel="stylesheet" href="contacto.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logoSF.png" alt="Logo de la tienda" />
+            </a>
+        </div>
+        <h1>MONKEY Cómics</h1>
+    </header>
+    <nav>
+        <a href="index.html">INDEX</a>
+        <a href="catalogo.html">CATALOG</a>
+        <a href="nosotros.html">ABOUT US</a>
+        <a href="contacto.html">CONTACT US</a>
+    </nav>
+
+    <!-- Hero Section -->
+
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, do not hesitate to contact us. We'd love to hear from you!</p>
+        
+        <form id="contact-form" action="submit_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Your E Mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+
+            <button type="submit" id="enviar-btn">SEND</button>
+            <p id="mensaje-enviado" style="display: none; color: green; font-weight: bold;">Datos enviados</p>
+
+        </form>
+
+        <div class="contact-info"><h3>You can also visit us:</h3>
+            <p>Adress: Calle Ficticia 123, Ciudad de los Cómics</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: MONKEYcomics@psicopedagogico.com</p>
+        </div>
+
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093746!2d144.9537353153184!3d-37.81627977975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771f3b5d15a3bd!2sFederation%20Square%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1599878863843!5m2!1sen!2sus" 
+                width="800px" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+</section>
+
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 MONKEY Cómics. All rights reserved.</p>
+            <ul>
+                <li><a href="https://www.facebook.com" class="facebook" target="_blank" aria-label="Facebook"></a></li>
+                <li><a href="https://www.twitter.com" class="twitter" target="_blank" aria-label="Twitter"></a></li>
+                <li><a href="https://www.instagram.com" class="instagram" target="_blank" aria-label="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>    
+
+    <script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario
+
+    // Muestra el mensaje "Datos enviados"
+    document.getElementById('mensaje-enviado').style.display = 'block';
+
+    // Limpia los campos del formulario
+    document.getElementById('nombre').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('mensaje').value = '';
+});
+
+    </script>
+
+</body>
+</html>

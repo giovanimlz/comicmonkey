@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc00;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffcc00; /* Color amarillo brillante */
+    color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img{
+    height: 80px;
+    margin-left: -1000px;
+}
+
+header h1 {
+    color: #282828;
+    margin-left: -1150px;
+}
+
+.boton-flotante {
+    position: fixed; /* Fijo en la ventana */
+    bottom: 20px; /* 20px desde el fondo */
+    right: 20px; /* 20px desde la derecha */
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición para color de fondo */
+}
+
+.boton-flotante:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffcc00; /* Amarillo brillante para contraste */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Naranja para interacción */
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/comic1.webp');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+#comics h2{
+    font-size: 30px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px;
+    padding: 20px;
+}
+
+.conjunto {
+    display: flex;
+    margin: 0 auto;
+}
+
+.titulo_promociones {
+    text-align: center;
+}
+
+#comics {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #282828; /* Fondo oscuro para la sección */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+#comics h2 {
+    text-align: center;
+    color: #ffcc00; /* Color del título */
+}
+
+/* Estilos para las tarjetas de productos */
+.productos {
+    display: flex;
+    flex-direction: row;
+}
+
+.producto {
+    border: 1px solid #444; /* Borde de las tarjetas */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px; /* Ajusta según sea necesario */
+    text-align: center;
+    background-color: #333; /* Fondo de las tarjetas */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%;
+    height: 300px;
+    width: 200px;
+    cursor: pointer; /* Indica que la imagen es interactiva */
+}
+
+.producto h3 {
+    color: #ffcc00; /* Color del nombre del producto */
+    margin: 10px 0;
+}
+
+.producto p {
+    color: #ddd;
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000; /* Asegura que el modal esté por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 500px; /* Tamaño máximo de la imagen */
+    max-height: 500px; /* Evita que la imagen sea demasiado grande */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffcc00; /* Cambia de color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resena {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    background-color: #fafafa;
+    border-top: 2px solid #ddd;
+}
+
+.resena-texto {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resena-texto h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.resena-texto p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffcc00;
+    border-top: 2px solid #ddd;
+}
+
+.video h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-container {
+    width: 200%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+.main-footer {
+    background-color: #282828; /* Color de fondo oscuro */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilo de la lista de redes sociales */
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+/* Estilo de los elementos de la lista */
+.main-footer ul li {
+    display: inline-block;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.main-footer ul li a {
+    display: inline-block;
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    background-size: contain; /* Asegura que la imagen se ajuste bien */
+    background-repeat: no-repeat; /* No repite la imagen */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+/* Efecto hover para ampliar los iconos */
+.main-footer ul li a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un poco al pasar el mouse */
+}
+
+/* Iconos de redes sociales (ubicados en la carpeta "imagenes") */
+.main-footer ul li a.facebook {
+    background-image: url('imagenes/facebook.png');
+}
+
+.main-footer ul li a.twitter {
+    background-image: url('imagenes/twiter.png');
+}
+
+.main-footer ul li a.instagram {
+    background-image: url('imagenes/instagram.png');
+}

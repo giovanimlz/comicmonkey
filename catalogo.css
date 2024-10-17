@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc00;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffcc00; /* Color amarillo brillante */
+    color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img{
+    height: 80px;
+    margin-left: -1000px;
+}
+
+header h1 {
+    color: #282828;
+    margin-left: -1150px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffcc00; /* Amarillo brillante para contraste */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Naranja para interacción */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/tienda.webp');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+.hero-content h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Catálogo Section */
+/* Estilos para la sección del catálogo */
+.catalogo-section {
+    padding: 40px;
+    background-color: #282828; /* Fondo oscuro para coincidir con la estética general */
+    color: #fff;
+    text-align: center;
+}
+
+.catalogo-section h2 {
+    font-size: 36px;
+    color: #ffcc00; /* Color amarillo para resaltar el título */
+    margin-bottom: 30px;
+}
+
+/* Estilos para la cuadrícula de productos */
+.productos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ajusta los productos automáticamente en filas */
+}
+
+/* Tarjetas de productos */
+.producto {
+    background-color: #333; /* Fondo oscuro para las tarjetas */
+    border: 2px solid #444; /* Borde sutil */
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px; /* Tamaño fijo para las tarjetas */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+}
+
+/* Estilos para las imágenes de los productos */
+.producto img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
+    height: 250px; /* Altura fija para mantener la uniformidad */
+    object-fit: cover; /* Mantiene la proporción de la imagen dentro del espacio */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Títulos y precios de los productos */
+.producto h3 {
+    font-size: 20px;
+    color: #ffcc00; /* Mantener el mismo color amarillo */
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 18px;
+    color: #fff; /* Texto en blanco para el precio */
+}
+
+
+.mapa {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    padding: 20px 0; /* Espaciado arriba y abajo del mapa */
+}
+
+.mapa iframe {
+    width: 100%; /* El mapa ocupará el 100% del ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo */
+    height: 300px; /* Altura del mapa */
+    border: 0; /* Elimina el borde */
+    display: block; /* Asegura que el iframe se comporte como un bloque */
+    margin: 0 auto; /* Centra el iframe horizontalmente */
+}
+
+
+
+
+
+
+/* Footer */
+.main-footer {
+    background-color: #282828; /* Color de fondo oscuro */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilo de la lista de redes sociales */
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+/* Estilo de los elementos de la lista */
+.main-footer ul li {
+    display: inline-block;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.main-footer ul li a {
+    display: inline-block;
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    background-size: contain; /* Asegura que la imagen se ajuste bien */
+    background-repeat: no-repeat; /* No repite la imagen */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+/* Efecto hover para ampliar los iconos */
+.main-footer ul li a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un poco al pasar el mouse */
+}
+
+/* Iconos de redes sociales (ubicados en la carpeta "imagenes") */
+.main-footer ul li a.facebook {
+    background-image: url('imagenes/facebook.png');
+}
+
+.main-footer ul li a.twitter {
+    background-image: url('imagenes/twiter.png');
+}
+
+.main-footer ul li a.instagram {
+    background-image: url('imagenes/instagram.png');
+}
+
+
+
+
+/* Estilos para el modal que agranda las imágenes */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal img.enlarged {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal img.enlarged:hover {
+    transform: scale(1.05); /* Agrandar un poco más cuando se pasa el mouse */
+}

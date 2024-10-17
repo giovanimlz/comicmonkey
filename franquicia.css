@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc00;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffcc00; /* Color amarillo brillante */
+    color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img{
+    height: 80px;
+    margin-left: -1000px;
+}
+
+header h1 {
+    color: #282828;
+    margin-left: -1150px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffcc00; /* Amarillo brillante para contraste */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733; /* Naranja para interacción */
+}
+
+
+
+
+
+.franquicia-modelo {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+}
+
+.franquicia-modelo h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.franquicia-modelo p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.opciones-pago {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.opcion {
+    background: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    backdrop-filter: blur(15px); /* Efecto de desenfoque */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 30px; /* Espaciado interno */
+    width: 30%; /* Ancho del contenedor */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    position: relative; /* Para el posicionamiento del botón */
+    margin: 20px; /* Espaciado entre las opciones */
+    text-align: center; /* Centrar el texto */
+    height: 400px; /* Fijar la altura del contenedor */
+    display: flex; /* Flexbox para manejar el contenido */
+    flex-direction: column; /* Columna */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+.opcion h3 {
+    color: #ffcc00; /* Color del título */
+    margin-bottom: 15px; /* Espacio inferior del título */
+    font-size: 24px; /* Tamaño de fuente más grande */
+}
+
+.opcion p {
+    color: #ffffff; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.opcion ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.opcion ul li {
+    margin-bottom: 10px; /* Espacio entre los ítems de la lista */
+    font-size: 16px; /* Tamaño de fuente de la lista */
+    color: #ffffff; /* Color del texto */
+}
+
+.opcion button {
+    padding: 12px 25px; /* Espaciado interno del botón */
+    background-color: #ffcc00; /* Color del botón */
+    border: none; /* Sin borde */
+    color: #000; /* Color del texto del botón */
+    font-size: 18px; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cursor de puntero */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espaciado superior */
+
+}
+
+.opcion button:hover {
+    background-color: #ff9900; /* Color del botón al pasar el mouse */
+}
+
+
+
+
+
+.contacto-franquicia {
+    margin-top: 40px;
+}
+
+.contacto-franquicia form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-franquicia label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffffff; /* Color de texto blanco */
+}
+
+.contacto-franquicia input, .contacto-franquicia textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto-franquicia button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.contacto-franquicia button:hover {
+    background-color: #ff9900;
+}
+
+.main-footer {
+    background-color: #282828; /* Color de fondo oscuro */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Estilo de la lista de redes sociales */
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+/* Estilo de los elementos de la lista */
+.main-footer ul li {
+    display: inline-block;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.main-footer ul li a {
+    display: inline-block;
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    background-size: contain; /* Asegura que la imagen se ajuste bien */
+    background-repeat: no-repeat; /* No repite la imagen */
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+/* Efecto hover para ampliar los iconos */
+.main-footer ul li a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un poco al pasar el mouse */
+}
+
+/* Iconos de redes sociales (ubicados en la carpeta "imagenes") */
+.main-footer ul li a.facebook {
+    background-image: url('imagenes/facebook.png');
+}
+
+.main-footer ul li a.twitter {
+    background-image: url('imagenes/twiter.png');
+}
+
+.main-footer ul li a.instagram {
+    background-image: url('imagenes/instagram.png');
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de Cómics</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logoSF.png" alt="Logo de la tienda" />
+            </a>
+        </div>
+        <h1>MONKEY Cómics</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">INDEX</a>
+        <a href="catalogo.html">CATALOG</a>
+        <a href="nosotros.html">ABOUT US</a>
+        <a href="contacto.html">CONTACT US</a>
+    </nav>
+    <section class="hero">
+        <h2>MONKEY comics</h2>
+        <p>"Become the hero of your own story."</p>
+    </section>
+    <section id="comics">
+        <h2>Promotions of the month</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/spiderman1.jpg" alt="Comic 1" class="comic-image">
+                <h3>Spiderman</h3>
+                <p>Spiderman # 23</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/superman3.webp" alt="Comic 2" class="comic-image">
+                <h3>Superman</h3>
+                <p>Superman # 324</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/wolverine.webp" alt="Comic 1" class="comic-image">
+                <h3>Wolverine</h3>
+                <p>Old Logan # 3</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/deadpool.jpg" alt="Comic 2" class="comic-image">
+                <h3>Deadpool</h3>
+                <p>Deadpool vs Avengers # 2</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/flash.webp" alt="Comic 2" class="comic-image">
+                <h3>Flash</h3>
+                <p>Flash # 44</p>
+            </div>
+
+            <!-- Agrega más cómics según sea necesario -->
+        </div>
+    </section>
+    
+    <!-- Eliminado el cierre de div y section mal ubicados -->
+
+    <section class="resena">
+        <div class="resena-texto">
+            <h2>About Ud</h2>
+            <p>Welcome to our comic book store, a place where heroes come to life. We offer a wide selection of comics, from classics to the latest releases, and a passionate team always ready to help you find your next adventure. Visit us and experience the magic of comics!</p>
+        </div>     
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093746!2d144.9537353153184!3d-37.81627977975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771f3b5d15a3bd!2sFederation%20Square%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1599878863843!5m2!1sen!2sus" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="video">
+        <h2>Get to know our store</h2>
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/KLJWgvsf4x0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 MONKEY Cómics. All rights reserved.</p>
+            <ul>
+                <li><a href="https://www.facebook.com" class="facebook" target="_blank" aria-label="Facebook"></a></li>
+                <li><a href="https://www.twitter.com" class="twitter" target="_blank" aria-label="Twitter"></a></li>
+                <li><a href="https://www.instagram.com" class="instagram" target="_blank" aria-label="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>  
+
+    <script>
+
+    </script>
+
+    <!-- Aquí se unifican las dos modales en uno solo -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img-modal">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
